@@ -1,7 +1,10 @@
 package com.example.estancia.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Nino(
-    val id: String = "",   // Lo asigna quien guarda el registro. Vacío = todavía no se ha guardado.
+    val id: String = "",   // Lo asigna el servidor. Vacío = todavía no se ha guardado.
     val nombre: String,
     val edad: Int,
     val sala: String,      // Una de las SALAS de abajo
