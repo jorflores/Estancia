@@ -1,16 +1,25 @@
+# Plantilla de Android Studio
 *.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
 .DS_Store
-/build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
-node_modules/
+
+# Builds de cualquier módulo
+build/
+
+# Kotlin 2.x
+.kotlin/
+
+# IDE (ignorado completo para evitar conflictos en equipo)
+.idea/
+
+# Artefactos de release y llaves de firma
+*.apk
+*.aab
+/app/release/
+*.jks
+*.keystore
