@@ -21,13 +21,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.estancia.model.Nino
+import com.example.estancia.model.Niño
 import com.example.estancia.model.ninosDePrueba
 
 @Composable
 fun NinoCard(
-    nino: Nino,
-    onClick: (Nino) -> Unit = {}
+    nino: Niño,
+    onClick: (Niño) -> Unit = {}
 ) {
     Card(
         modifier = Modifier
@@ -77,7 +77,7 @@ fun NinoCard(
 }
 
 /** true si el campo de alergias tiene algo distinto de "Ninguna". */
-fun tieneAlergias(nino: Nino): Boolean =
+fun tieneAlergias(nino: Niño): Boolean =
     nino.alergias.isNotBlank() && !nino.alergias.equals("Ninguna", ignoreCase = true)
 
 @Preview(showBackground = true)

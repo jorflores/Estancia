@@ -15,9 +15,9 @@ object RetrofitClient {
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    val api: NinosApi = Retrofit.Builder()
+    val api: NiñosApi = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
         .build()
-        .create(NinosApi::class.java)
+        .create(NiñosApi::class.java)
 }

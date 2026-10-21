@@ -2,8 +2,8 @@ package com.example.estancia.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.estancia.data.NinoRepository
-import com.example.estancia.model.Nino
+import com.example.estancia.data.NiñoRepository
+import com.example.estancia.model.Niño
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -11,12 +11,12 @@ import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
 
-class NinosViewModel(
-    private val repositorio: NinoRepository = NinoRepository()
+class NiñosViewModel(
+    private val repositorio: NiñoRepository = NiñoRepository()
 ) : ViewModel() {
 
-    private val _ninos = MutableStateFlow<List<Nino>>(emptyList())
-    val ninos: StateFlow<List<Nino>> = _ninos.asStateFlow()
+    private val _ninos = MutableStateFlow<List<Niño>>(emptyList())
+    val ninos: StateFlow<List<Niño>> = _ninos.asStateFlow()
 
     private val _error = MutableStateFlow<String?>(null)
     val error: StateFlow<String?> = _error.asStateFlow()
@@ -29,11 +29,11 @@ class NinosViewModel(
         ejecutar { }   // Ningún cambio: solo vuelve a pedir la lista
     }
 
-    fun agregar(nino: Nino) {
+    fun agregar(nino: Niño) {
         ejecutar { repositorio.crear(nino) }        // POST
     }
 
-    fun actualizar(nino: Nino) {
+    fun actualizar(nino: Niño) {
         ejecutar { repositorio.actualizar(nino) }   // PUT
     }
 

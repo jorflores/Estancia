@@ -24,7 +24,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.estancia.model.Nino
+import com.example.estancia.model.Niño
 import com.example.estancia.model.SALAS
 
 /**
@@ -35,8 +35,8 @@ import com.example.estancia.model.SALAS
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormularioScreen(
-    nino: Nino?,
-    onGuardar: (Nino) -> Unit,
+    nino: Niño?,
+    onGuardar: (Niño) -> Unit,
     onCancelar: () -> Unit
 ) {
     // Si viene un niño (editar), los campos empiezan con sus datos; si no, vacíos.
@@ -99,7 +99,7 @@ fun FormularioScreen(
             Button(
                 onClick = {
                     onGuardar(
-                        Nino(
+                        Niño(
                             id = nino?.id ?: "",   // Nuevo: id vacío. Editar: conserva su id.
                             nombre = nombre.trim(),
                             edad = edad ?: 0,

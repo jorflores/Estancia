@@ -3,7 +3,7 @@ package com.example.estancia.model
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Nino(
+data class Niño(
     val id: String = "",   // Lo asigna el servidor. Vacío = todavía no se ha guardado.
     val nombre: String,
     val edad: Int,

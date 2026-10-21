@@ -18,7 +18,7 @@ import com.example.estancia.screens.DetalleScreen
 import com.example.estancia.screens.FormularioScreen
 import com.example.estancia.screens.ListaScreen
 import com.example.estancia.ui.theme.EstanciaTheme
-import com.example.estancia.viewmodel.NinosViewModel
+import com.example.estancia.viewmodel.NiñosViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +37,7 @@ fun MainNavigation() {
     val nav = rememberNavController()
 
     // NUEVO: los datos vienen del servidor a través del ViewModel (antes: mutableStateListOf en memoria)
-    val vm: NinosViewModel = viewModel()
+    val vm: NiñosViewModel = viewModel()
     val ninos by vm.ninos.collectAsStateWithLifecycle()
     val error by vm.error.collectAsStateWithLifecycle()
 
