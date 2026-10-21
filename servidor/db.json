@@ -1,9 +1,40 @@
 {
-  "ninos": [
-    { "id": "1", "nombre": "Sofía Ramírez", "edad": 3, "sala": "Maternal", "alergias": "Ninguna" },
-    { "id": "2", "nombre": "Mateo González", "edad": 1, "sala": "Lactantes", "alergias": "Lácteos" },
-    { "id": "3", "nombre": "Valentina López", "edad": 5, "sala": "Preescolar", "alergias": "Nuez" },
-    { "id": "4", "nombre": "Diego Hernández", "edad": 4, "sala": "Preescolar", "alergias": "Ninguna" },
-    { "id": "5", "nombre": "Regina Torres", "edad": 2, "sala": "Maternal", "alergias": "Huevo" }
-  ]
+  "niños": [
+    {
+      "id": "2",
+      "nombre": "Mateo González",
+      "edad": 1,
+      "sala": "Lactantes",
+      "alergias": "Lácteos"
+    },
+    {
+      "id": "3",
+      "nombre": "Valentina López",
+      "edad": 5,
+      "sala": "Preescolar",
+      "alergias": "Nuez"
+    },
+    {
+      "id": "4",
+      "nombre": "Diego Hernández",
+      "edad": 4,
+      "sala": "Preescolar",
+      "alergias": "Ninguna"
+    },
+    {
+      "id": "5",
+      "nombre": "Regina Torres",
+      "edad": 3,
+      "sala": "Maternal",
+      "alergias": "Huevo"
+    },
+    {
+      "nombre": "Pedro",
+      "edad": 6,
+      "sala": "Preescolar",
+      "alergias": "Ninguna",
+      "id": "1zgO6c6xz2Q"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -26,13 +26,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.estancia.model.Nino
+import com.example.estancia.model.Niño
 import com.example.estancia.model.ninosDePrueba
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetalleScreen(
-    nino: Nino?,
+    nino: Niño?,
     onRegresar: () -> Unit,
     onEditar: () -> Unit,
     onEliminar: () -> Unit

@@ -20,14 +20,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.estancia.components.NinoCard
-import com.example.estancia.model.Nino
+import com.example.estancia.model.Niño
 import com.example.estancia.model.ninosDePrueba
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ListaScreen(
-    ninos: List<Nino>,
-    onClick: (Nino) -> Unit,
+    ninos: List<Niño>,
+    onClick: (Niño) -> Unit,
     onAgregar: () -> Unit,
     error: String? = null    // Mensaje para mostrar arriba de la lista (null = sin error)
 ) {

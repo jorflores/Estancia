@@ -1,4 +1,4 @@
-# Estancia (starter)
+# Estancia (solución)
 
 Ejercicio integrador: CRUD con Retrofit (GET, POST, PUT, DELETE) contra una API local con json-server.
 TC2007B · Desarrollo Móvil (Android).
